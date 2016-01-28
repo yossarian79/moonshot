@@ -80,7 +80,7 @@ function QCtrl($scope,$http,ApiEndpoint,$log){
 app.controller("getQCtrl",["$scope","$stateParams","$http","ApiEndpoint","question","$log",getQCtrl]);
 function getQCtrl($scope,$stateParams,$http,ApiEndpoint,question,$log){
      $id=question; 
-     $id=parseInt($id)+1;
+     $id=parseInt($id);
      $http.get(ApiEndpoint.url+"/"+$id)
         .success(function(result){
             $scope.p=result;

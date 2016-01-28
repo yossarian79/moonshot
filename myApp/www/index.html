@@ -58,7 +58,7 @@
     <ion-list>
       <ion-item ng-repeat="p in posts"
         class="item item-icon-right"
-        ui-sref="questions.detail({question: $index})">
+        ui-sref="questions.detail({question: p.id})">
         <span>{{p.title}}</span>
          <p>{{p.description}}</p>
          
