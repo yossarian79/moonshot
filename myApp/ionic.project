@@ -1,0 +1,10 @@
+{
+  "name": "myApp",
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/questions",
+      "proxyUrl": "http://desolate-scrubland-47423.herokuapp.com/questions"
+    }
+  ]
+}
